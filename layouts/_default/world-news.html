@@ -1,0 +1,36 @@
+{{ define "title" }}
+    {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+    {{ .Content }}
+<div class="container" style="background-color: white">
+    <div>
+        <table style="width: 100%; table-layout: fixed; padding-top: 10px;" class="collapse">
+            <tbody style="vertical-align: top">
+                <tr>
+                    {{ range $.Site.Data.worldnews }}
+                    <td>
+                        <ul style="list-style: none; padding: 0; margin: 0">
+                        {{ range . }}
+                            <li>
+                                <div>
+                                    <h1 style="margin: 2px;">{{.name}}</h1>
+                                    <ul style="list-style: none; padding:0px 10px 10px 10px">
+                                        {{ range .websites }}
+                                        <li style="padding: 0.5rem; border-bottom: black dotted 1px">
+                                            <a href="{{ .url }}">{{ .name }}</a>
+                                        </li>
+                                        {{ end }}
+                                    </ul>
+                                </div>
+                            </li>
+                        {{ end }}
+                        </ul>
+                    </td>
+                    {{ end }}
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{{ end }}

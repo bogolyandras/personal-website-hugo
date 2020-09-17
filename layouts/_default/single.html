@@ -1,0 +1,11 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+  <div class="container" style="background-color: white">
+    <div>
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </div>
+  </div>
+{{ end }}

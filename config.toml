@@ -1,3 +1,28 @@
-baseURL = "http://example.org/"
+baseURL = "https://bogolyandras.com/"
+title = "András Bögöly's Personal Homepage"
 languageCode = "en-us"
-title = "My New Hugo Site"
+enableRobotsTXT = true
+
+DefaultContentLanguage = "en"
+copyright = "Everything is mine"
+
+[languages]
+  [languages.en]
+    LanguageName = "English"
+    weight = 1
+    linkedin = "https://linkedin.com/bogolyandras"
+  [languages.de]
+    title_suffix = "mein Blog"
+    LanguageName = "Deutsch"
+    weight = 2
+    linkedin = "https://linkedin.com/de/bogolyandras"
+  [languages.hu]
+    title_suffix = "Bögöly András honlapja"
+    LanguageName = "Magyar"
+    weight = 3
+    linkedin = "https://linkedin.com/hu/bogolyandras"
+
+[params]
+  title_suffix = "András Bögöly's Personal Homepage"
+  [params.navigation]
+    help = "Help"

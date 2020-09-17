@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>{{ .Title }} &ndash; {{ .Param "title_suffix" }}</title>
+    {{ $style := resources.Get "main.css" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" />
+    
+    {{ if .IsTranslated }}
+      {{ range .Translations }}
+        <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+      {{ end }}
+    {{ end }}
+    {{ $js := resources.Get "main.js" | js.Build "main.js" | minify | fingerprint }} {{ $secureJS := $js | resources.Fingerprint "sha512" }}
+    <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+  </head>
+  <body>
+    <div>
+      <div class="container" style="background-color: white">
+        <div>{{ partial "menu.html" . }}</div>
+      </div>
+      {{ block "main" . }}{{ end }}
+      <div class="container">
+        <div>{{ partial "i18nlist.html" . }}</div>
+      </div>
+    </div>
+  </body>
+</html>
