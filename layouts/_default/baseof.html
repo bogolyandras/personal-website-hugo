@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <title>{{ .Title }} &ndash; {{ .Param "title_suffix" }}</title>
     {{ $style := resources.Get "main.css" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" />
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
     
     {{ if .IsTranslated }}
       {{ range .Translations }}
-        <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+        <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .RelPermalink }}" title="{{ .Language.LanguageName }}">
       {{ end }}
     {{ end }}
     {{ $js := resources.Get "main.js" | js.Build "main.js" | minify | fingerprint }} {{ $secureJS := $js | resources.Fingerprint "sha512" }}
-    <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+    <script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
   </head>
   <body>
     <div>
