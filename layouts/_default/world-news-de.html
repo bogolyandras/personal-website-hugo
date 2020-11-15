@@ -3,7 +3,6 @@
 {{ end }}
 {{ define "main" }}
     {{ .Content }}
-    {{ .Scratch.Set "data" .Site.Data.worldnews }}
+    {{ .Scratch.Set "data" .Site.Data.worldnews_de }}
     {{ partial "world-news" . }}
 {{ end }}
-

@@ -50,7 +50,7 @@
     {
       "name": "France",
       "websites": [
-        { "name": "Agence France Presse", "url": "https://www.afp.com/en" }
+        { "name": "France 24", "url": "https://www.france24.com/en/" }
       ]
     },
     {
@@ -68,7 +68,7 @@
         { "name": "Nikkei Asian Review", "url": "https://asia.nikkei.com/" },
         { "name": "The Asahi Shimbun", "url": "http://www.asahi.com/ajw/" },
         { "name": "The Japan News", "url": "https://the-japan-news.com/" },
-        { "name": "The Japan Times", "url": "https://www.japantimes.co.jp/ "}
+        { "name": "The Japan Times", "url": "https://www.japantimes.co.jp/" }
       ]
     },
     {
@@ -81,15 +81,21 @@
       ]
     },
     {
+      "name": "Taiwan",
+      "websites": [
+        { "name": "Taipei Times", "url": "https://www.taipeitimes.com/" }
+      ]
+    },
+    {
       "name": "Singapore",
       "websites": [
         { "name": "Straits Times", "url": "https://www.straitstimes.com/" }
       ]
     },
     {
-      "name": "Taiwan",
+      "name": "Malaysia",
       "websites": [
-        { "name": "Taipei Times", "url": "https://www.taipeitimes.com/" }
+        { "name": "New Straits Times", "url": "https://www.nst.com.my" }
       ]
     },
     {
@@ -113,10 +119,10 @@
     {
       "name": "India",
       "websites": [
-        { "name": "TFIPost", "url": "https://tfipost.com/" },
         { "name": "India Times", "url": "https://www.indiatimes.com/" },
         { "name": "Hindustan Times", "url": "https://www.hindustantimes.com/" },
-        { "name": "The Hindu", "url": "https://www.thehindu.com/" }
+        { "name": "The Hindu", "url": "https://www.thehindu.com/" },
+        { "name": "TFIPost", "url": "https://tfipost.com/" }
       ]
     },
     {
@@ -125,7 +131,6 @@
         { "name": "The Jerusalem Post", "url": "https://www.jpost.com/" }
       ]
     }
-
   ],
   [
     {

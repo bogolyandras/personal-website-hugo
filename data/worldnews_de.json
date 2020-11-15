@@ -1,0 +1,43 @@
+[
+  [
+    {
+      "name": "Germany",
+      "websites": [
+        { "name": "Bild", "url": "https://www.bild.de/" },
+        { "name": "Deutsche Welle", "url": "https://www.dw.com/de" },
+        { "name": "Frankfurt Allgemeine Zeitung", "url": "https://www.faz.net/" },
+        { "name": "Spiegel", "url": "https://www.spiegel.de/" },
+        { "name": "Süddeutsche Zeitung", "url": "https://www.sueddeutsche.de/" }
+      ]
+    },
+    {
+      "name": "Österreich",
+      "websites": [
+        { "name": "Der Standard", "url": "https://www.derstandard.at" },
+        { "name": "ORF", "url": "https://orf.at/" }
+      ]
+    },
+    {
+      "name": "United States",
+      "websites": [
+        { "name": "Reuters", "url": "https://de.reuters.com/" }
+      ]
+    }
+  ],
+  [
+    {
+      "name": "Russia",
+      "websites": [
+        { "name": "Russia Today", "url": "https://deutsch.rt.com" },
+        { "name": "Sputnik News", "url": "https://de.sputniknews.com/" }
+      ]
+    },
+    {
+      "name": "China",
+      "websites": [
+        { "name": "Xinhua", "url": "http://german.xinhuanet.com/" },
+        { "name": "People's Daily", "url": "http://german.people.com.cn/" }
+      ]
+    }
+  ]
+]

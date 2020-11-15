@@ -11,7 +11,6 @@
   <div style="padding-top: 20px; padding-bottom: 20px; background-color: white" class="container">
     <div>{{ .Content }}</div>
     <div>
-      {{ partial "albumimage" . }}
       {{ .Scratch.Set "width" "320" }}
       {{ .Scratch.Set "height" "180" }}
       <table style="border-spacing: 2px; width: 100%" collapse="collapse table">
