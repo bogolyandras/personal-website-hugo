@@ -4,7 +4,7 @@
         {{ with .Param "home_page" }}
             <span>Home</span>
         {{ else }}
-            <a href="/">Home</a>
+            <a href="{{ .LanguagePrefix }}/">Home</a>
         {{ end }}
     </li>
 
@@ -12,7 +12,7 @@
         {{ with .Param "blog_page" }}
             <span>Blog</span>
         {{ else }}
-            <a href="/blog/">Blog</a>
+            <a href="{{ .LanguagePrefix }}/blog/">Blog</a>
         {{ end }}
     </li>
 
@@ -20,7 +20,7 @@
         {{ with .Param "world_news_page" }}
             <span>World News</span>
         {{ else }}
-            <a href="/world-news/">World News</a>
+            <a href="{{ .LanguagePrefix }}/world-news/">World News</a>
         {{ end }}
     </li>
     
