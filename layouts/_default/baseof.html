@@ -5,9 +5,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <title>{{ .Title }} &ndash; {{ .Param "title_suffix" }}</title>
-    {{ $style := resources.Get "main.css" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    {{ $sass := resources.Get "main.scss" }}
+    {{ $style := $sass | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-    
     {{ if .IsTranslated }}
       {{ range .Translations }}
         <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .RelPermalink }}" title="{{ .Language.LanguageName }}">
@@ -17,14 +17,14 @@
     <script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
   </head>
   <body>
-    <div>
-      <div class="container" style="background-color: white">
-        <div>{{ partial "menu.html" . }}</div>
-      </div>
+    <nav>
+      {{ partial "menu.html" . }}
+    </nav>
+    <main>
       {{ block "main" . }}{{ end }}
-      <div class="container">
-        <div>{{ partial "i18nlist.html" . }}</div>
-      </div>
-    </div>
+    </main>
+    <footer>
+      {{ partial "i18nlist.html" . }}
+    </footer>
   </body>
 </html>

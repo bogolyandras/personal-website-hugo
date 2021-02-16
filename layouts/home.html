@@ -1,55 +1,44 @@
 {{ define "main" }}
-  <div style="padding-top: 7px; padding-bottom: 15px; color: white; background-color: #325c80" class="container">
-    <div>
-      <h1 style="font-size: 3em; font-weight: 400">{{ i18n "greeting" }}</h1>
-      <p style="font-weight: 100">{{ i18n "welcome_message" }}</p>
-    </div>
-  </div>
-  
 
+<div>
+  <h1 style="font-size: 3em; font-weight: 400">{{ i18n "greeting" }}</h1>
+  <p style="font-weight: 100">{{ i18n "welcome_message" }}</p>
+</div>
 
-  <div style="padding-top: 20px; padding-bottom: 20px; background-color: white" class="container">
-    <div>{{ .Content }}</div>
-    <div>
-      {{ .Scratch.Set "width" "320" }}
-      {{ .Scratch.Set "height" "180" }}
-      <table style="border-spacing: 2px; width: 100%" collapse="collapse table">
-        <tbody>
-          <tr>
-            {{ .Scratch.Set "img" "https://www.flickr.com/photos/bogolyandras/14361853906" }}
-            {{ .Scratch.Set "title" "Sleeping Kitten" }}
-            {{ .Scratch.Set "base64" ((.Resources.GetMatch "14361853906_9df07f909f_n.jpg").Content | base64Encode) }}
-            {{ partial "albumimage" . }}
-            {{ .Scratch.Set "img" "https://www.flickr.com/photos/bogolyandras/13543664355" }}
-            {{ .Scratch.Set "title" "Aranyfa" }}
-            {{ .Scratch.Set "base64" ((.Resources.GetMatch "13543664355_f01064fa4a_n.jpg").Content | base64Encode) }}
-            {{ partial "albumimage" . }}
-            {{ .Scratch.Set "img" "https://www.flickr.com/photos/bogolyandras/13454067423" }}
-            {{ .Scratch.Set "title" "Waterfall" }}
-            {{ .Scratch.Set "base64" ((.Resources.GetMatch "13454067423_04ab2f2f60_n.jpg").Content | base64Encode) }}
-            {{ partial "albumimage" . }}
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            {{ .Scratch.Set "img" "https://www.flickr.com/photos/bogolyandras/13842086385" }}
-            {{ .Scratch.Set "title" "Salad" }}
-            {{ .Scratch.Set "base64" ((.Resources.GetMatch "13842086385_fe5ae0c52a_n.jpg").Content | base64Encode) }}
-            {{ partial "albumimage" . }}
-            {{ .Scratch.Set "img" "https://www.flickr.com/photos/bogolyandras/14592209397" }}
-            {{ .Scratch.Set "title" "Niederösterreich" }}
-            {{ .Scratch.Set "base64" ((.Resources.GetMatch "14592209397_87644c58b0_n.jpg").Content | base64Encode) }}
-            {{ partial "albumimage" . }}
-            {{ .Scratch.Set "img" "https://www.flickr.com/photos/bogolyandras/13364086264://www.flickr.com/photos/bogolyandras/13454067423" }}
-            {{ .Scratch.Set "title" "Wagrain Mountains" }}
-            {{ .Scratch.Set "base64" ((.Resources.GetMatch "13364086264_61b39ac3a6_n.jpg").Content | base64Encode) }}
-            {{ partial "albumimage" . }}
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    
-  </div>
+<div>{{ .Content }}</div>
 
-  
+<div class="album">
+{{ .Scratch.Set "width" "320" }}  
+{{ .Scratch.Set "height" "180" }}
+
+{{ .Scratch.Set "img" "https://www.flickr.com/photos/bogolyandras/14361853906" }}
+{{ .Scratch.Set "title" "Sleeping Kitten" }}
+{{ .Scratch.Set "base64" ((.Resources.GetMatch "14361853906_9df07f909f_n.jpg").Content | base64Encode) }}
+{{ partial "albumimage" . }}
+{{ .Scratch.Set "img" "https://www.flickr.com/photos/bogolyandras/13543664355" }}
+{{ .Scratch.Set "title" "Aranyfa" }}
+{{ .Scratch.Set "base64" ((.Resources.GetMatch "13543664355_f01064fa4a_n.jpg").Content | base64Encode) }}
+{{ partial "albumimage" . }}
+{{ .Scratch.Set "img" "https://www.flickr.com/photos/bogolyandras/13454067423" }}
+{{ .Scratch.Set "title" "Waterfall" }}
+{{ .Scratch.Set "base64" ((.Resources.GetMatch "13454067423_04ab2f2f60_n.jpg").Content | base64Encode) }}
+{{ partial "albumimage" . }}
+
+{{ .Scratch.Set "width" "320" }}
+{{ .Scratch.Set "height" "240" }}
+
+{{ .Scratch.Set "img" "https://www.flickr.com/photos/bogolyandras/13842086385" }}
+{{ .Scratch.Set "title" "Salad" }}
+{{ .Scratch.Set "base64" ((.Resources.GetMatch "13842086385_fe5ae0c52a_n.jpg").Content | base64Encode) }}
+{{ partial "albumimage" . }}
+{{ .Scratch.Set "img" "https://www.flickr.com/photos/bogolyandras/14592209397" }}
+{{ .Scratch.Set "title" "Niederösterreich" }}
+{{ .Scratch.Set "base64" ((.Resources.GetMatch "14592209397_87644c58b0_n.jpg").Content | base64Encode) }}
+{{ partial "albumimage" . }}
+{{ .Scratch.Set "img" "https://www.flickr.com/photos/bogolyandras/13364086264://www.flickr.com/photos/bogolyandras/13454067423" }}
+{{ .Scratch.Set "title" "Wagrain Mountains" }}
+{{ .Scratch.Set "base64" ((.Resources.GetMatch "13364086264_61b39ac3a6_n.jpg").Content | base64Encode) }}
+{{ partial "albumimage" . }}
+</div>
+
 {{ end }}

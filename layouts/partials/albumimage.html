@@ -1,11 +1,8 @@
-<td style="padding: 0; line-height: 0">
-    <a href="{{ .Scratch.Get "img" }}">
-        <img src="data:image/jpeg;base64,{{ .Scratch.Get "base64" }}"
-             width="{{ .Scratch.Get "width" }}"
-             height="{{ .Scratch.Get "height" }}"
-             alt="{{ .Scratch.Get "title" }}"
-             title="{{ .Scratch.Get "title" }}"
-             style="width: 100%; height: auto;"
-             />
-    </a>
-</td>
+<a href="{{ .Scratch.Get "img" }}">
+    <img src="data:image/jpeg;base64,{{ .Scratch.Get "base64" }}"
+            width="{{ .Scratch.Get "width" }}"
+            height="{{ .Scratch.Get "height" }}"
+            alt="{{ .Scratch.Get "title" }}"
+            title="{{ .Scratch.Get "title" }}"
+            />
+</a>

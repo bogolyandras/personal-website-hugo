@@ -1,0 +1,109 @@
+
+body {
+    margin: auto;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background-color: white;
+}
+
+main {
+    background-color: white;
+}
+
+footer {
+    background-color: #a5c4dc;
+}
+
+p, a, span, h1, h2, h3, h4, h5, h6 {
+    font-family: system-ui, sans-serif;
+    font-weight: normal;
+}
+
+p, a {
+    font-size: 1em;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+div.container {
+    margin: 0;
+    padding: 0 12px 0 12px;
+}
+
+div.container > div {
+    max-width: 1300px;
+    margin: auto;
+}
+
+nav a:link, nav a:visited, a:hover, a:active, nav span {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1em;
+    color: black;
+    padding: 5px;
+}
+
+nav a {
+    border-bottom: solid 3px darkslategray;
+    transition: 200ms;
+}
+
+nav a:hover {
+    border-bottom-color: darkturquoise;
+}
+
+nav span {
+    border-bottom: dotted 3px darkslategray;
+}
+
+nav ul {
+    display: grid;
+    margin: 5px;
+    gap: 2ch;
+    grid-template-columns: repeat(3, minmax(10px, 100%));
+    justify-items: center;
+}
+
+nav li, nav li a, nav li span {
+    display: inline-block;
+}
+
+div.album {
+    display: grid;
+    gap: 0.4ch;
+    padding: 0.4ch;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    justify-items: center;
+    grid-template-areas: 
+    "photo photo photo";
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+div.album img, div.album a {
+    width: 100%;
+}
+
+div.album img {
+    height: 100%;
+    grid-area: photo;
+}
+
+@media screen and (max-width: 700px) {
+
+    div.album {
+        grid-template-columns: minmax(250px, 1fr);
+        grid-template-areas: "photo";
+    }
+
+    nav ul {
+        grid-template-columns: 100%;
+    }
+
+}

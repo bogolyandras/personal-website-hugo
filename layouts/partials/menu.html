@@ -1,26 +1,26 @@
-<ul style="padding: 0; margin: 0">
+<ul>
     
-    <li class="collapse navigation">
+    <li>
         {{ with .Param "home_page" }}
             <span>Home</span>
         {{ else }}
-            <a href="{{ .LanguagePrefix }}/">Home</a>
+            <a href="{{ .Site.LanguagePrefix }}/">Home</a>
         {{ end }}
     </li>
 
-    <li class="collapse navigation">
+    <li>
         {{ with .Param "blog_page" }}
             <span>Blog</span>
         {{ else }}
-            <a href="{{ .LanguagePrefix }}/blog/">Blog</a>
+            <a href="{{ .Site.LanguagePrefix }}/blog/">Blog</a>
         {{ end }}
     </li>
 
-    <li class="collapse navigation">
+    <li>
         {{ with .Param "world_news_page" }}
             <span>World News</span>
         {{ else }}
-            <a href="{{ .LanguagePrefix }}/world-news/">World News</a>
+            <a href="{{ .Site.LanguagePrefix }}/world-news/">World News</a>
         {{ end }}
     </li>
     
