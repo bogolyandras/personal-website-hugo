@@ -1,8 +1,9 @@
-<ul>
+<div class="world-news">
     {{ range .Scratch.Get "data" }}
+    <ul>
         {{ range . }}
             <li>
-                <p>{{.name}}</p>
+                <h3>{{.name}}</h3>
                 <ul>
                     {{ range .websites }}
                         <li>
@@ -12,5 +13,6 @@
                 </ul>
             </li>
         {{ end }}
+    </ul>
     {{ end }}
-</ul>
+</div>

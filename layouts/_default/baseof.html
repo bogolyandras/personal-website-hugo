@@ -18,13 +18,19 @@
   </head>
   <body>
     <nav>
-      {{ partial "menu.html" . }}
+      <div></div>
+      <div>{{ partial "menu.html" . }}</div>
+      <div></div>
     </nav>
     <main>
-      {{ block "main" . }}{{ end }}
+      <div></div>
+      <div>{{ block "main" . }}{{ end }}</div>
+      <div></div>
     </main>
     <footer>
-      {{ partial "i18nlist.html" . }}
+      <div></div>
+      <div>{{ partial "i18nlist.html" . }}</div>
+      <div></div>
     </footer>
   </body>
 </html>
