@@ -1,7 +1,7 @@
 [
   [
     {
-      "name": "Germany",
+      "name": "Deutschland",
       "websites": [
         { "name": "Bild", "url": "https://www.bild.de/" },
         { "name": "Deutsche Welle", "url": "https://www.dw.com/de" },
@@ -18,7 +18,7 @@
       ]
     },
     {
-      "name": "United States",
+      "name": "Vereinigte Staaten",
       "websites": [
         { "name": "Reuters", "url": "https://de.reuters.com/" }
       ]
@@ -26,7 +26,7 @@
   ],
   [
     {
-      "name": "Russia",
+      "name": "Russland",
       "websites": [
         { "name": "Russia Today", "url": "https://deutsch.rt.com" },
         { "name": "Sputnik News", "url": "https://de.sputniknews.com/" }

@@ -17,16 +17,9 @@
     <script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
   </head>
   <body>
-    <nav>
-      <div></div>
-      <div>{{ partial "menu.html" . }}</div>
-      <div></div>
-    </nav>
-    <main>
-      <div></div>
-      <div>{{ block "main" . }}{{ end }}</div>
-      <div></div>
-    </main>
+    <nav>{{ partial "menu.html" . }}</nav>
+    <header>{{ block "header" . }}{{ end }}</header>
+    <main>{{ block "main" . }}{{ end }}</main>
     <footer>
       <div></div>
       <div>{{ partial "i18nlist.html" . }}</div>

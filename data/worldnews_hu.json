@@ -1,0 +1,12 @@
+[
+  [
+    {
+      "name": "Magyarország",
+      "websites": [
+        { "name": "Index", "url": "https://index.hu/" },
+        { "name": "Origo", "url": "https://origo.hu/" },
+        { "name": "24.hu", "url": "https://24.hu/" }
+      ]
+    }
+  ]
+]

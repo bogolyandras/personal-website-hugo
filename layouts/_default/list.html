@@ -1,6 +1,11 @@
+{{ define "header" }}
+  <div></div>
+  <div>{{ .Content }}</div>
+  <div></div>
+{{ end }}
 {{ define "main" }}
+<div></div>
 <div>
-  {{ .Content }}
   <ul>
     {{ range .Pages }}
     <li>
@@ -9,4 +14,5 @@
     {{ end }}
   </ul>
 </div>
+<div></div>
 {{ end }}
