@@ -13,8 +13,11 @@
     {
       "name": "Österreich",
       "websites": [
+        { "name": "ORF", "url": "https://orf.at/" },
         { "name": "Der Standard", "url": "https://www.derstandard.at" },
-        { "name": "ORF", "url": "https://orf.at/" }
+        { "name": "DiePresse.com", "url": "https://www.diepresse.com/" },
+        { "name": "oe24.at", "url": "https://www.oe24.at/"},
+        { "name": "Heute", "url": "https://www.heute.at/" }
       ]
     },
     {
