@@ -20,6 +20,11 @@ footer {
     background-color: #a5c4dc;
 }
 
+div.footerlist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 nav, header, main, footer {
     display: grid;
     grid-template-columns: minmax(5px, auto) minmax(300px, 1300px) minmax(5px, auto);
@@ -90,7 +95,6 @@ div.album {
     justify-items: center;
     grid-template-areas: 
     "photo photo photo";
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 div.album img, div.album a {
@@ -140,6 +144,11 @@ div.world-news {
     }
 
     div.world-news {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    div.footerlist {
         display: grid;
         grid-template-columns: 1fr;
     }

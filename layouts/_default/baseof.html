@@ -22,7 +22,10 @@
     <main>{{ block "main" . }}{{ end }}</main>
     <footer>
       <div></div>
-      <div>{{ partial "i18nlist.html" . }}</div>
+      <div class="footerlist">
+        {{ partial "i18nlist.html" . }}
+        {{ partial "socialmedia.html" . }}
+      </div>
       <div></div>
     </footer>
   </body>

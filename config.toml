@@ -10,17 +10,17 @@ copyright = "Everything is mine"
   [languages.en]
     LanguageName = "English"
     weight = 1
-    linkedin = "https://linkedin.com/bogolyandras"
+    linkedin = "https://www.linkedin.com/in/bogolyandras"
   [languages.de]
-    title_suffix = "mein Blog"
+    title_suffix = "András Bögöly's Personal Homepage"
     LanguageName = "Deutsch"
     weight = 2
-    linkedin = "https://linkedin.com/de/bogolyandras"
+    linkedin = "https://de.linkedin.com/in/bogolyandras"
   [languages.hu]
     title_suffix = "Bögöly András honlapja"
     LanguageName = "Magyar"
     weight = 3
-    linkedin = "https://linkedin.com/hu/bogolyandras"
+    linkedin = "https://hu.linkedin.com/in/bogolyandras"
 
 [params]
   title_suffix = "András Bögöly's Personal Homepage"
